@@ -1,0 +1,478 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "vasir-medium";
+  src: url(fonts/Vazirmatn-Medium.woff2) format("woff2");
+}
+@font-face {
+  font-family: "vasir-black";
+  src: url(fonts/Vazirmatn-Black.woff2) format("woff2");
+}
+@font-face {
+  font-family: "vasir-bold";
+  src: url(fonts/Vazirmatn-Bold.woff2) format("woff2");
+}
+@font-face {
+  font-family: "vasir-extrabold";
+  src: url(fonts/Vazirmatn-Extrabold.woff2) format("woff2");
+}
+@font-face {
+  font-family: "vasir-extralight";
+  src: url(fonts/Vazirmatn-ExtraLight.woff2) format("woff2");
+}
+@font-face {
+  font-family: "vasir-light";
+  src: url(fonts/Vazirmatn-Light.woff2) format("woff2");
+}
+@font-face {
+  font-family: "vasir-regular";
+  src: url(fonts/Vazirmatn-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "vasir-semibold";
+  src: url(fonts/Vazirmatn-SemiBold.woff2) format("woff2");
+}
+@font-face {
+  font-family: "vasir-thin";
+  src: url(fonts/Vazirmatn-Thin.woff2) format("woff2");
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .head {
+  width: 100%;
+  height: 4.3rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #201f1f;
+}
+.main .head .article-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 3.5rem;
+  font-size: 1.1rem;
+  font-family: "vasir-bold";
+}
+.main .head .article-right .items {
+  padding: 1rem;
+}
+.main .head .article-right .items .item-1 {
+  /*select tag*/
+  background-color: #201f1f;
+  color: #fff;
+  outline: 0;
+  border: 0;
+  font-size: 1.05rem;
+  font-family: "Vasir-Bold";
+}
+.main .head .article-right .items .item {
+  /*a tag*/
+  color: #fff;
+  text-decoration: none;
+}
+.main .article-left {
+  width: 3.125rem;
+  height: 3.125rem;
+  margin: 0 0 0.4rem 4rem;
+}
+.main .article-left .img {
+  border-radius: 5rem;
+}
+.main .header-2 {
+  /*Start photo under the menu*/
+  width: 100%;
+  height: 25rem;
+  background: url("./image/section-head/1.jpg") center center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.main .header-2 .text-img {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.main .header-2 .text-1 {
+  font-family: "Vasir-Black";
+  font-size: 2.5rem;
+  word-spacing: 3px;
+  margin-bottom: 1.35rem;
+}
+.main .header-2 .text-2 {
+  width: 40%;
+  font-family: "Vasir-medium";
+  font-size: 1rem;
+  text-align: center;
+  word-break: break-all;
+  line-height: 1.8;
+}
+.main .header-2 .text-bottom {
+  background-color: rgba(255, 255, 255, 0.4509803922);
+  padding: 1rem;
+}
+.main .header-2 .text-bottom .text-3 {
+  margin-left: 3.5rem;
+}
+.main .header-2 .text-bottom .text-3 .s-1 {
+  color: #c00000;
+}
+.main .section {
+  width: 100%;
+  height: 100%;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .section .head-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .section .head-section .title-section {
+  font-family: "Vasir-black";
+  font-size: 2rem;
+}
+.main .section .head-section .line {
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: #ffb520;
+}
+.main .section .sec-article {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.main .section .sec-article .article {
+  width: calc(33.333% - 2rem);
+  height: 15rem;
+  margin: 1rem 1rem 6rem 1rem;
+}
+.main .section .sec-article .article .item-1-img {
+  width: 100%;
+  height: 100%;
+  background: url(./image/article-section/1.jpg) center center/cover no-repeat;
+}
+.main .section .sec-article .article .item-2-img {
+  width: 100%;
+  height: 100%;
+  background: url(./image/article-section/2.jpg) center center/cover no-repeat;
+}
+.main .section .sec-article .article .item-3-img {
+  width: 100%;
+  height: 100%;
+  background: url(./image/article-section/3.jpg) center center/cover no-repeat;
+}
+.main .section .sec-article .article .item-4-img {
+  width: 100%;
+  height: 100%;
+  background: url(./image/article-section/4.jpg) center center/cover no-repeat;
+}
+.main .section .sec-article .article .item-5-img {
+  width: 100%;
+  height: 100%;
+  background: url(./image/article-section/5.jpg) center center/cover no-repeat;
+}
+.main .section .sec-article .article .item-6-img {
+  width: 100%;
+  height: 100%;
+  background: url(./image/article-section/6.jpg) center center/cover no-repeat;
+}
+.main .section .sec-article .article .all-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.19);
+}
+.main .section .sec-article .article .all-text .box-style {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  background-color: #ffb520;
+  margin-right: 1rem;
+}
+.main .section .sec-article .article .all-text .text-style {
+  padding-bottom: 1rem;
+}
+.main .section .sec-article .article .all-text .text-style .item-2 {
+  padding: 1rem;
+  font-family: "vasir-black";
+  font-size: 1.3rem;
+}
+.main .section .sec-article .article .all-text .text-style .item-3 {
+  margin-left: 0.8rem;
+  font-family: "vasir-light";
+}
+.main .section .box-bar {
+  margin-top: 3.7rem;
+  display: flex;
+  flex-direction: row;
+  transform: scale(1.1);
+}
+.main .section .box-bar .active-box {
+  background-color: #ffb520;
+}
+.main .section .box-bar .active-box #one {
+  color: #fff;
+}
+.main .section .box-bar .box-same {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 0.1px solid rgba(185, 130, 21, 0.6);
+}
+.main .section .box-bar .box-same .click-box {
+  text-decoration: none;
+  color: #ffb520;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.main .section .box-bar .box-same:hover {
+  background-color: #ffb520;
+}
+.main .section .box-bar .box-same:hover .click-box {
+  color: #fff;
+}
+.main .email-section {
+  width: 100%;
+  height: 47rem;
+  background-color: #ffb520;
+  display: flex;
+  margin-top: 4rem;
+  flex-direction: column;
+  align-items: center;
+}
+.main .email-section .head-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "vasir-black";
+  font-size: 2rem;
+  margin-top: 3.5rem;
+}
+.main .email-section .role-title {
+  width: 1.5rem;
+  height: 4px;
+  background-color: #fff;
+}
+.main .email-section .main-email {
+  width: 60%;
+  margin: 0 auto;
+}
+.main .email-section .main-email .form-style {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  padding: 1.2rem;
+  outline: none;
+}
+.main .email-section .main-email .form-style .checkbox {
+  position: relative;
+  text-align: center;
+}
+.main .email-section .main-email .form-style .checkbox .checked {
+  display: none;
+}
+.main .email-section .main-email .form-style .checkbox .checkmark {
+  width: 26px;
+  height: 25px;
+  position: absolute;
+  top: -5px;
+  right: 338px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: #ffb520;
+}
+.main .email-section .main-email .form-style .checkbox:hover .checked ~ .checkmark {
+  background-color: #9a6805;
+}
+.main .email-section .main-email .form-style .checkbox .checked:checked ~ .checkmark {
+  background-color: #0628e6;
+}
+.main .email-section .main-email .form-style .checkbox .checked:checked ~ .checkmark::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 12px;
+  top: 1px;
+  right: 7px;
+  border: 3px solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotatez(45deg);
+}
+.main .email-section .main-email .form-style .button-style {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 5.2rem;
+  height: 2.6rem;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 2px;
+  font-family: "vasir-bold";
+  transition: all ease-in-out 0.4s;
+  margin-top: 2rem;
+}
+.main .email-section .main-email .form-style .button-style:hover {
+  transform: scale(1.2);
+  transition: all ease-in-out 0.4s;
+}
+.main .email-section .main-email .form-style label {
+  margin: 1.5rem 0 0.4rem 0;
+  font-family: "vasir-black";
+}
+.main .email-section .main-email .form-style .style-input {
+  background-color: #ffb520;
+  border: 1px solid #fff;
+  padding: 0.8rem;
+}
+.main .email-section .main-email .form-style .style-input::placeholder,
+.main .email-section .main-email .form-style textarea::placeholder {
+  color: #fff;
+  font-size: 0.8rem;
+}
+.main .main-foot {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #000;
+}
+.main .main-foot .item-foot {
+  width: calc(25% - 3rem);
+  margin: 1.5rem;
+}
+.main .main-foot .col-1 {
+  display: flex;
+  flex-direction: column;
+}
+.main .main-foot .col-1 .head-foot {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+.main .main-foot .col-1 .svg-follow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+}
+.main .main-foot .col-1 .svg-follow .item-svg {
+  width: calc(33.333% - 1rem);
+  margin: 0.5rem;
+  margin-bottom: 2rem;
+  transform: scale(1.8);
+}
+.main .main-foot .col-1 .svg-follow .item-svg a {
+  color: #ffb520;
+}
+.main .main-foot .col-2, .main .main-foot .col-3, .main .main-foot .col-4, .main .main-foot .col-5 {
+  display: flex;
+  flex-direction: column;
+}
+.main .main-foot .col-2 .one-foot, .main .main-foot .col-3 .one-foot, .main .main-foot .col-4 .one-foot, .main .main-foot .col-5 .one-foot {
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: "vasir-bold";
+  text-align: center;
+}
+.main .main-foot .col-2 a, .main .main-foot .col-3 a, .main .main-foot .col-4 a, .main .main-foot .col-5 a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 0.4rem;
+}
+.main .end-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3.5rem;
+  background-color: #ffb520;
+}
+.main .end-footer .end {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
